@@ -64,11 +64,11 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
 
-        // Allow your React frontend ports and deployed Netlify app
+        // Allow your React frontend ports and deployed Azure frontend
         configuration.setAllowedOrigins(Arrays.asList(
             "http://localhost:3000",
             "http://localhost:5173",
-            "https://divinearch.netlify.app"
+            "https://lively-tree-03e8e1e0f.3.azurestaticapps.net"
         ));
 
         // Allow standard HTTP methods plus OPTIONS for pre-flight

@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/serving")
-@CrossOrigin(origins = {"http://localhost:3000", "https://divinearch.netlify.app"})
+@CrossOrigin(origins = {"http://localhost:3000", "https://lively-tree-03e8e1e0f.3.azurestaticapps.net"})
 @RequiredArgsConstructor
 public class ServingController {
 
