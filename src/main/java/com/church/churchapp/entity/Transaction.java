@@ -53,5 +53,6 @@ public class Transaction {
 
     // --- Property Rent Specific Fields ---
     private String tenantPurpose;
+    private Long leaseId;
 
 }

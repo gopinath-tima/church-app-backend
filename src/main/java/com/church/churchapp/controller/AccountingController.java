@@ -31,6 +31,11 @@ public class AccountingController {
         return ResponseEntity.ok(accountingService.getTransactionsByMemberId(memberId));
     }
 
+    @GetMapping("/transactions/date")
+    public ResponseEntity<List<Transaction>> getTransactionsByDate(@RequestParam String date) {
+        return ResponseEntity.ok(accountingService.getTransactionsByDate(date));
+    }
+
     @PostMapping("/transactions")
     public ResponseEntity<Transaction> addTransaction(@RequestBody Transaction transaction) {
         return ResponseEntity.ok(accountingService.addTransaction(transaction));

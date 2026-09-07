@@ -13,4 +13,5 @@ public interface TransactionRepository extends JpaRepository<Transaction, Long> 
     List<Transaction> findByMemberId(Long memberId);
     List<Transaction> findByTypeAndForMonthAndForYear(String type, Integer forMonth, Integer forYear);
     Optional<Transaction> findByTypeAndMemberIdAndForMonthAndForYear(String type, Long memberId, Integer forMonth, Integer forYear);
+    List<Transaction> findByDate(String date);
 }

@@ -36,6 +36,10 @@ public class AccountingService {
         return transactionRepository.findByMemberId(memberId);
     }
 
+    public List<Transaction> getTransactionsByDate(String date) {
+        return transactionRepository.findByDate(date);
+    }
+
     public Transaction addTransaction(Transaction transaction) {
         // Generate Transaction ID if not provided. Use UUID to avoid collisions on parallel requests.
         if (transaction.getTransactionId() == null || transaction.getTransactionId().isEmpty()) {
