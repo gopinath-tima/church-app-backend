@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/attendance")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3000", "https://divinearch.netlify.app"})
 @RequiredArgsConstructor
 @PreAuthorize("hasAnyRole('MINISTRY', 'ADMIN', 'SUPER_ADMIN', 'SUPER_PLUS_ADMIN')")
 public class AttendanceController {
